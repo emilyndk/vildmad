@@ -1,0 +1,9 @@
+@font-face {
+    font-family: inter;
+    src: url(../font/Inter-Light.woff2);
+}
+
+@font-face {
+    font-family: interB;
+    src: url(../font/Inter-Bold.woff2);
+}

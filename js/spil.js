@@ -1,3 +1,4 @@
+// kode taget fra dev.to
 const SCALE = 2;
 const WIDTH = 16;
 const HEIGHT = 18;

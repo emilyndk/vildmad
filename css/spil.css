@@ -1,13 +1,30 @@
-canvas {
+/* canvas {
   border: 1px solid black;
-}
+} */
 
-#spil_baggrund {
-  width: 100%;
+#game_background {
   height: 100%;
+  aspect-ratio: 1280/832;
   position: absolute;
   top: 0;
   left: 0;
   background-size: cover;
-  background-image: url(svg);
+  background-image: url(/svg/city.svg);
+  order: -1;
+}
+
+#mushroom_container {
+  width: 2%;
+  aspect-ratio: 100/104;
+  position: absolute;
+  left: 35%;
+  top: 1%;
+}
+
+#mushroom_sprite {
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-image: url(/svg/mushroom.svg);
 }

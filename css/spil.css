@@ -1,30 +1,49 @@
-/* canvas {
-  border: 1px solid black;
-} */
+@media only screen and (min-width: 800px) {
+  /* Your desktop styles here */
 
-#game_background {
-  height: 100%;
-  aspect-ratio: 1280/832;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  background-image: url(/svg/city.svg);
-  order: -1;
-}
+  #game_background {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1450/832;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url(/svg/city.svg);
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
 
-#mushroom_container {
-  width: 2%;
-  aspect-ratio: 100/104;
-  position: absolute;
-  left: 35%;
-  top: 1%;
-}
+  #mushroom_container {
+    width: 2%;
+    aspect-ratio: 100/104;
+    position: absolute;
+    left: 520px;
+    top: 7px;
+  }
 
-#mushroom_sprite {
-  width: 100%;
-  height: 100%;
+  #mushroom_sprite {
+    width: 100%;
+    height: 100%;
 
-  background-size: cover;
-  background-image: url(/svg/mushroom.svg);
+    background-size: cover;
+    background-image: url(/svg/mushroom.svg);
+  }
+
+  #blueb_container {
+    width: 2%;
+    aspect-ratio: 100/100;
+    position: absolute;
+    left: 396px;
+    top: 670px;
+  }
+
+  #blueb_sprite {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-image: url(/svg/blueberry.svg);
+  }
 }

@@ -5,5 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product list</title>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+
+    <main>
+      <template id="productlist_info">
+        <h1></h1>
+        <button></button>
+        <h2></h2>
+        <p></p>
+      </template>
+
+      <template id="productlist_template">
+        <img src="#" alt="" />
+        <h3></h3>
+        <p></p>
+        <form name="findings" id="findings" netlify>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" />
+
+          <label for="product">Product foraged:</label>
+          <select name="product" id="product">
+            <option value="product1">product1</option>
+            <option value="product2">product2</option>
+          </select>
+
+          <label for="date">Date found:</label>
+          <input type="date" id="date" name="date" />
+
+          <label for="comment">Comment:</label>
+          <textarea name="comment" id="comment"></textarea>
+
+          <input type="submit" id="submit" value="SUBMIT" />
+        </form>
+      </template>
+    </main>
+
+    <footer></footer>
+    <script src="js/productlist.js"></script>
+  </body>
 </html>

@@ -16,7 +16,7 @@ function showProducts(products) {
   // loop og kald showProduct
   console.log(products);
 
-  document.querySelector(".info_category").textContent = "Category: " + products[0].categories;
+  document.querySelector(".info_category").textContent = products[0].headers;
 
   products.forEach(showProduct);
 }

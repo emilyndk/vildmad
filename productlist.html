@@ -6,16 +6,15 @@
     <title>Product list</title>
   </head>
   <body>
-    <header>
-      <img src="img/vildmad_logo.svg" alt="logo" />
-    </header>
+    <header></header>
 
     <main>
       <template id="productlist_info">
         <h1></h1>
         <button></button>
         <h2></h2>
-        <p></p>
+        <p id="pl_category"></p>
+        <p id="pl_season"></p>
       </template>
 
       <template id="productlist_template">
@@ -23,19 +22,10 @@
         <h3></h3>
         <p></p>
         <form name="findings" id="findings" netlify>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" />
+          <label for="produc_found">Product foraged:</label>
+          <input type="checkbox" id="produc_found" name="produc_found" />
 
-          <label for="product">Product foraged:</label>
-          <select name="product" id="product">
-            <option value="product1">product1</option>
-            <option value="product2">product2</option>
-          </select>
-
-          <label for="date">Date found:</label>
-          <input type="date" id="date" name="date" />
-
-          <label for="comment">Comment:</label>
+          <label for="comment">Add comment:</label>
           <textarea name="comment" id="comment"></textarea>
 
           <input type="submit" id="submit" value="SUBMIT" />

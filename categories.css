@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../font/Inter-Light.woff2);
+}
+
+body {
+  font-family: inter;
+}
+
+nav {
+  background-color: #ffc8c9;
+  height: 2rem;
+  border: 1px solid #000;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 0.5rem;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+}
+
+.logo img {
+  width: 3rem;
+  margin: 10px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.logo_button_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  margin-top: 3rem;
+
+  margin-bottom: 10px;
+}
+
+.button p {
+  padding: 1rem;
+  border: 2px solid #000;
+  background-color: #ffc8c9;
+  border-radius: 15px;
+  margin-right: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landscapes_grid {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.landscape {
+  background-color: #ffc8c9;
+  padding: 10px;
+  border: 2px solid #000;
+
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landscape h2 {
+  text-align: center;
+}
+
+.landscape a {
+  text-decoration: none;
+  color: black;
+}
+
+.landscape img {
+  display: none;
+  width: 200px;
+  padding: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .landscapes_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .landscape img {
+    display: block;
+  }
+}

@@ -15,6 +15,9 @@ fetch(`${supabaseURL}/rest/v1/products`, {
 function showProducts(products) {
   // loop og kald showProduct
   console.log(products);
+
+  document.querySelector(".info_category").textContent = "Category: " + products[0].categories;
+
   products.forEach(showProduct);
 }
 
@@ -24,10 +27,12 @@ function showProduct(product) {
   // lav en kopi
   const copy = template.cloneNode(true);
   // ændre indhold
+  console.log("product", product);
   copy.querySelector("h3").textContent = product.title;
-  copy.querySelector("p").textContent = "Category: " + product.categories;
-  copy.querySelector("p").textContent = "Season: " + product.season;
+  copy.querySelector("img").src = product.product_image;
+  copy.querySelector(".pl_category").textContent = "Category: " + product.categories;
+  copy.querySelector(".pl_season").textContent = "Season:" + product.season;
 
   // appende
-  document.querySelector("main").appendChild(copy);
+  document.querySelector("#product_container").appendChild(copy);
 }

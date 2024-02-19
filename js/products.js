@@ -1,18 +1,25 @@
+// definer hvor dataen kommer fra
 const supabaseURL = "https://yetkfhqjsmqjnluzjxmn.supabase.co";
 const supabaseKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlldGtmaHFqc21xam5sdXpqeG1uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NTcwOTMsImV4cCI6MjAyMzMzMzA5M30.IG9539I2rD_1xYUORhw44Y_-8HTJDZnjL-tAzDjFQok";
 
-const headers = supabaseURL.get("headers");
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 
-fetch(`${supabaseURL}/rest/v1/products?headers=city`, {
-  method: "GET",
-  headers: {
-    apikey: supabaseKey,
-  },
-})
+fetch(
+  "https://yetkfhqjsmqjnluzjxmn.supabase.co/rest/v1/products?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlldGtmaHFqc21xam5sdXpqeG1uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NTcwOTMsImV4cCI6MjAyMzMzMzA5M30.IG9539I2rD_1xYUORhw44Y_-8HTJDZnjL-tAzDjFQok" +
+    id,
+  {
+    method: "GET",
+    headers: {
+      apikey: supabaseKey,
+    },
+  }
+)
   .then((res) => res.json())
-  .then(showProducts);
+  .then(showProduct);
 
 function showProduct(product) {
-  console.log(product);
+  console.table(product);
+  document.querySelector("h1").textContent = product.title;
 }

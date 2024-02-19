@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="292.93" height="355.18" viewBox="0 0 292.93 355.18">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #d63e3d;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #2f5d2d;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <ellipse class="cls-3" cx="178.72" cy="36.04" rx="48.45" ry="15.81" transform="translate(26.86 136.93) rotate(-45)"/>
+    <ellipse class="cls-2" cx="95.89" cy="210.16" rx="95.89" ry="145.01"/>
+    <ellipse class="cls-2" cx="197.04" cy="210.16" rx="95.89" ry="145.01"/>
+    <polygon class="cls-4" points="91.16 229.21 61.26 208.79 64.99 193.96 94.88 214.38 91.16 229.21"/>
+    <polygon class="cls-4" points="86.87 213.23 116.42 193.96 119.57 207.1 90.02 226.37 86.87 213.23"/>
+    <rect class="cls-4" x="64.99" y="193.96" width="51.43" height="12.95"/>
+    <rect class="cls-1" x="60.8" y="153.23" width="8.37" height="55.57"/>
+    <rect class="cls-1" x="112.24" y="152.52" width="8.37" height="55.57"/>
+    <rect class="cls-1" x="85.69" y="147.06" width="8.37" height="53.38"/>
+    <rect class="cls-1" x="84.95" y="202.19" width="9.85" height="152.78"/>
+    <rect class="cls-1" x="197.04" y="202.19" width="9.85" height="152.78"/>
+    <ellipse class="cls-1" cx="201.96" cy="180.3" rx="27.02" ry="45.97"/>
+  </g>
+</svg>

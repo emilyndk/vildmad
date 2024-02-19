@@ -4,36 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product list</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/productlist.css" />
   </head>
+
   <body>
-    <header></header>
+    <header>
+      <a href="index.html">
+        <h1>LOGO</h1>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="productlist.html">Productlist</a></li>
+          <li><a href="products.html">Product</a></li>
+          <li><a href="categories.html">categories</a></li>
+          <li><a href="spil.html">Play Game</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <template id="productlist_info">
+      <section id="productlist_info">
         <h1></h1>
         <button></button>
         <h2></h2>
-        <p id="pl_category"></p>
-        <p id="pl_season"></p>
-      </template>
-
-      <template id="productlist_template">
-        <img src="#" alt="" />
-        <h3></h3>
-        <p></p>
-        <form name="findings" id="findings" netlify>
-          <label for="produc_found">Product foraged:</label>
-          <input type="checkbox" id="produc_found" name="produc_found" />
-
-          <label for="comment">Add comment:</label>
-          <textarea name="comment" id="comment"></textarea>
-
-          <input type="submit" id="submit" value="SUBMIT" />
-        </form>
-      </template>
+        <p class="info_category"></p>
+        <div id="product_container"></div>
+      </section>
     </main>
 
     <footer></footer>
     <script src="js/productlist.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>
+
+<!-- template til productlist -->
+<template id="productlist_template">
+  <article>
+    <img src="#" alt="" />
+    <h3></h3>
+    <p class="pl_category"></p>
+    <p class="pl_season"></p>
+    <button><a href="products.html">Read more!</a></button>
+    <form name="findings" id="findings" netlify>
+      <label for="product_found">Product foraged:</label>
+      <input type="checkbox" id="product_found" name="product" />
+      <label for="comment">Add comment:</label>
+      <textarea name="comment" id="comment"></textarea>
+
+      <input type="submit" id="submit" value="SUBMIT" />
+    </form>
+  </article>
+</template>

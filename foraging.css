@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+  color: white;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../font/Inter-Light.woff2);
+}
+
+body {
+  background-color: #00825e;
+}
+p {
+  margin: 2rem;
+  line-height: 1.7;
+}
+nav {
+  height: 2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 0.5rem;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+}
+
+.logo img {
+  width: 100px;
+  margin: 10px;
+  margin-top: 1rem;
+}
+
+.back {
+  width: 3rem;
+  margin: 10px;
+
+  margin-left: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}

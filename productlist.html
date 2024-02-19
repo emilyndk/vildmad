@@ -18,27 +18,29 @@
         <p class="info_category"></p>
         <div id="product_container"></div>
       </section>
-
-      <template id="productlist_template">
-        <article>
-          <img src="#" alt="" />
-          <h3></h3>
-          <p class="pl_category"></p>
-          <p class="pl_season"></p>
-          <form name="findings" id="findings" netlify>
-            <label for="produc_found">Product foraged:</label>
-            <input type="checkbox" id="produc_found" name="produc_found" />
-
-            <label for="comment">Add comment:</label>
-            <textarea name="comment" id="comment"></textarea>
-
-            <input type="submit" id="submit" value="SUBMIT" />
-          </form>
-        </article>
-      </template>
     </main>
 
     <footer></footer>
     <script src="js/productlist.js"></script>
   </body>
 </html>
+
+<!-- template til productlist -->
+<template id="productlist_template">
+  <article>
+    <img src="#" alt="" />
+    <h3></h3>
+    <p class="pl_category"></p>
+    <p class="pl_season"></p>
+    <button>Read more!</button>
+    <form name="findings" id="findings" netlify>
+      <label for="produc_found">Product foraged:</label>
+      <input type="checkbox" id="produc_found" name="produc_found" />
+
+      <label for="comment">Add comment:</label>
+      <textarea name="comment" id="comment"></textarea>
+
+      <input type="submit" id="submit" value="SUBMIT" />
+    </form>
+  </article>
+</template>

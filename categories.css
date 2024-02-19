@@ -17,7 +17,6 @@ body {
 nav {
   background-color: #ffc8c9;
   height: 2rem;
-  border: 1px solid #000;
 }
 
 ul {
@@ -35,15 +34,10 @@ li a {
 }
 
 .logo img {
-  width: 3rem;
+  width: 100px;
   margin: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-left: 2rem;
-}
-
-.logo_button_flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 .back {
@@ -56,7 +50,7 @@ li a {
 h1 {
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .landscapes_grid {
@@ -69,12 +63,15 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .landscape h2,
 .landscape a {
   text-align: left;
+}
+
+a {
+  text-decoration: none;
 }
 
 .landscape a {
@@ -94,6 +91,11 @@ h1 {
   background-color: #e1ddc0;
 }
 
+.outintheopen a,
+.city a {
+  color: black;
+}
+
 .landscape img {
   display: none;
   width: 200px;
@@ -106,7 +108,9 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .landscape img {
+  /* .landscape img {
     display: block;
   }
+
+  */
 }

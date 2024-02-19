@@ -46,18 +46,11 @@ li a {
   justify-content: space-between;
 }
 
-.button {
-  margin-top: 3rem;
+.back {
+  width: 3rem;
+  margin: 10px;
 
-  margin-bottom: 10px;
-}
-
-.button p {
-  padding: 1rem;
-  border: 2px solid #000;
-  background-color: #ffc8c9;
-  border-radius: 15px;
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 h1 {
@@ -68,28 +61,37 @@ h1 {
 
 .landscapes_grid {
   display: grid;
-  gap: 2rem;
-  padding: 2rem;
 }
 
 .landscape {
   background-color: #ffc8c9;
   padding: 10px;
-  border: 2px solid #000;
 
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.landscape h2 {
-  text-align: center;
+.landscape h2,
+.landscape a {
+  text-align: left;
 }
 
 .landscape a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.forest {
+  background-color: #00825e;
+}
+
+.bythewater {
+  background-color: #032871;
+}
+
+.outintheopen {
+  background-color: #e1ddc0;
 }
 
 .landscape img {

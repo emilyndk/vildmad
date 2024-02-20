@@ -14,10 +14,6 @@ nav {
   height: 2rem;
 }
 
-body:hover {
-  background-color: #00825e;
-}
-
 ul {
   display: flex;
   justify-content: space-evenly;
@@ -100,11 +96,4 @@ a {
   display: none;
   width: 200px;
   padding: 0.5rem;
-}
-
-@media (min-width: 600px) {
-  .landscapes_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }

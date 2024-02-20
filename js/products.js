@@ -16,10 +16,11 @@ fetch(`https://yetkfhqjsmqjnluzjxmn.supabase.co/rest/v1/products?id=eq.${id}`, {
   .then(showProduct);
 
 function showProduct(product) {
+  const singleProduct = product[0];
   console.table(product);
-  document.querySelector("h1").textContent = product.title;
-  document.querySelector(".product_img").src = product.product_image;
-  document.querySelector(".infolist_cat").textContent = product.categories;
-  document.querySelector(".infolist_szn").textContent = product.season;
-  document.querySelector(".infolist_loc").textContent = product.sankelandskab;
+  document.querySelector("h1").textContent = singleProduct.title;
+  document.querySelector(".product_img").src = singleProduct.product_image;
+  document.querySelector(".infolist_cat").textContent = singleProduct.categories;
+  document.querySelector(".infolist_szn").textContent = singleProduct.season;
+  document.querySelector(".infolist_loc").textContent = singleProduct.sankelandskab;
 }

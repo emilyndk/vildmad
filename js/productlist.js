@@ -32,6 +32,7 @@ function showProduct(product) {
   copy.querySelector("img").src = product.product_image;
   copy.querySelector(".pl_category").textContent = "Category: " + product.categories;
   copy.querySelector(".pl_season").textContent = "Season:" + product.season;
+  copy.querySelector("a").href = `products.html?id=${product.id}`;
 
   // appende
   document.querySelector("#product_container").appendChild(copy);

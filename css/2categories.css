@@ -34,12 +34,9 @@ li a {
   margin-top: 1rem;
 }
 
-.back p {
+.back a {
   margin: 10px;
   margin-left: 0;
-}
-
-.back p {
   font-size: 40px;
 }
 

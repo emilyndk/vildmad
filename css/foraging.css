@@ -55,11 +55,9 @@ h1 {
   color: white;
 }
 
-.back p {
+.back a {
   margin: 10px;
   margin-left: 2rem;
-}
-
-.back p {
   font-size: 40px;
+  color: white;
 }

@@ -4,20 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vildmad.dk</title>
+  <title>Frontpage</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-      <h1>LOGO</h1>
-    </a>
+    <div class="flex">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/vildmad_logo.svg" alt="Logo" /></a>
+      </div>
+
+
+    </div>
+
     <nav>
       <ul class="menu">
         <li><a href="index.html">Frontpage</a></li>
+        <li><a href="2categories.html">Choose</a></li>
         <li><a href="productlist.html">Productlist</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="categories.html">categories</a></li>
@@ -30,9 +37,96 @@
       </div>
     </nav>
   </header>
-  <main></main>
-  <footer></footer>
+
+  <main>
+
+    <h1>What grade are you?</h1>
+    <section class="grades">
+
+      <article class="grade">
+
+        <a href="2categories.html">1. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">2. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">3. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">4. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">5. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">6. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">7. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">8. grade</a>
+
+      </article>
+      <article class="grade">
+
+        <a href="2categories.html">9. grade</a>
+
+      </article>
+
+
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="grid">
+      <p class="contact">
+        <a href="#">Contact</a> <br> <a href="#">Social media</a><br> <a href="#">Work with us</a>
+      </p>
+
+      <div class="icons"> <img src="img/footer_img.svg" alt="icons">
+        <p class="school">A school project by Emily, Ronja, Clara & Fie for Copenhagen School of Design and Technology,
+          made
+          in the Spring of 2024.</p>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+
   <script src="js/burger.js"></script>
+
+  <script>
+    document.querySelector("a").addEventListener("mouseover", hoverEffect);
+    function hoverEffect() {
+      document.querySelector("a").classList.add(hover);
+    }
+
+    document.querySelector("a").addEventListener("mouseleave", hoverEnd);
+    function hoverEnd() {
+      document.querySelector("a").classList.remove(hover);
+    }
+  </script>
 </body>
 
 </html>

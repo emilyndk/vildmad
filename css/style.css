@@ -1,13 +1,43 @@
 @font-face {
-    font-family: inter;
-    src: url(../font/Inter-Light.woff2);
+  font-family: inter;
+  src: url(../font/Inter-Light.woff2);
 }
 
 @font-face {
-    font-family: interB;
-    src: url(../font/Inter-Bold.woff2);
+  font-family: interB;
+  src: url(../font/Inter-Bold.woff2);
 }
 
 body {
-    font-family: inter;
+  font-family: inter;
+}
+
+footer {
+  background-color: #72757b;
+}
+
+footer p,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .contact {
+  line-height: 2;
+  font-size: 15px;
+  margin-top: 2rem;
+  margin: 1rem;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer .school {
+  font-size: 12px;
+}
+
+.icons {
+  margin: 1rem;
 }

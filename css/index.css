@@ -10,6 +10,10 @@
   src: url(../font/Inter-Light.woff2);
 }
 
+header {
+  margin-bottom: 2rem;
+}
+
 nav {
   height: 2rem;
 }
@@ -43,36 +47,27 @@ li a {
   font-size: 40px;
 }
 
-.option {
-  padding: 10px;
-
-  display: flex;
-  flex-direction: column;
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  font-size: 25px;
 }
 
-.option h2,
-.option a {
-  text-align: left;
+.grades {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
-a {
+.grade a {
   text-decoration: none;
+  color: black;
 }
 
-.option a,
-h2 {
-  text-decoration: none;
-  color: white;
+.grade a:hover {
+  color: red;
 }
 
-.info {
-  background-color: #00825e;
-}
-
-.game {
-  background-color: #032871;
-}
-
-section {
-  margin-top: 3rem;
+.grade {
+  margin-bottom: 1rem;
 }

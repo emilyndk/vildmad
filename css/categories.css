@@ -1,5 +1,5 @@
 * {
-  margin-right: 2px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: inter;
@@ -34,10 +34,13 @@ li a {
   margin-top: 1rem;
 }
 
-.back {
-  width: 3rem;
+.back p {
   margin: 10px;
-  margin-left: 2rem;
+  margin-left: 0;
+}
+
+.back p {
+  font-size: 40px;
 }
 
 h1 {
@@ -46,11 +49,21 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.landscapes_grid {
+  display: grid;
+}
+
 .landscape {
   background-color: #ffc8c9;
-  padding-left: 10px;
+  padding: 10px;
+
   display: flex;
   flex-direction: column;
+}
+
+.landscape h2,
+.landscape a {
+  text-align: left;
 }
 
 a {
@@ -58,6 +71,7 @@ a {
 }
 
 .landscape a {
+  text-decoration: none;
   color: white;
 }
 

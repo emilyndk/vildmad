@@ -22,7 +22,6 @@ ul a {
   text-decoration: none;
   color: black;
   font-size: 3rem;
-  font-weight: bold;
 }
 header {
   gap: 10px;
@@ -36,8 +35,8 @@ header a {
   text-decoration: none;
   color: black;
   padding-right: 20px;
-  font-weight: bold;
   font-size: 1rem;
+  font-family: inter;
 }
 header ul {
   display: flex;
@@ -54,7 +53,6 @@ header ul {
   text-decoration: none;
   color: black;
   padding-right: 20px;
-  font-weight: bold;
   font-size: 1rem;
   font-family: inter;
 }
@@ -107,12 +105,13 @@ header ul {
 }
 
 @media screen and (min-width: 768px) {
+  @font-face {
+    font-family: inter;
+    src: url(../font/Inter-Light.woff2);
+  }
   header nav ul {
     padding: 1rem 2rem;
     padding-left: 1rem;
-  }
-  header nav ul,
-  header nav {
     display: flex;
     position: static;
     list-style: none;
@@ -126,11 +125,11 @@ header ul {
     margin: auto;
   }
 
-  a {
-    font-weight: 50;
+  header a {
     color: rgb(8, 7, 7);
     text-decoration: none;
     text-shadow: 1px 0px 0px;
+    font-family: inter;
   }
 
   header {
@@ -138,7 +137,6 @@ header ul {
     justify-content: space-between;
     align-items: center;
     padding: 3px;
-    background-color: #dae2ef;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
   }

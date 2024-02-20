@@ -41,26 +41,15 @@ li a {
   margin-left: 2rem;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-.landscapes_grid {
-  display: grid;
-}
-
-.landscape {
-  background-color: #ffc8c9;
+.option {
   padding: 10px;
 
   display: flex;
   flex-direction: column;
 }
 
-.landscape h2,
-.landscape a {
+.option h2,
+.option a {
   text-align: left;
 }
 
@@ -68,43 +57,20 @@ a {
   text-decoration: none;
 }
 
-.landscape a {
+.option a,
+h2 {
   text-decoration: none;
   color: white;
 }
 
-.forest {
+.info {
   background-color: #00825e;
 }
 
-.bythewater {
+.game {
   background-color: #032871;
 }
 
-.outintheopen {
-  background-color: #e1ddc0;
-}
-
-.outintheopen a,
-.city a {
-  color: black;
-}
-
-.landscape img {
-  display: none;
-  width: 200px;
-  padding: 0.5rem;
-}
-
-@media (min-width: 600px) {
-  .landscapes_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  /* .landscape img {
-    display: block;
-  }
-
-  */
+section {
+  margin-top: 3rem;
 }

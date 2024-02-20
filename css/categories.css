@@ -37,7 +37,6 @@ li a {
 .back {
   width: 3rem;
   margin: 10px;
-
   margin-left: 2rem;
 }
 
@@ -47,21 +46,11 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.landscapes_grid {
-  display: grid;
-}
-
 .landscape {
   background-color: #ffc8c9;
-  padding: 10px;
-
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
-}
-
-.landscape h2,
-.landscape a {
-  text-align: left;
 }
 
 a {
@@ -69,7 +58,6 @@ a {
 }
 
 .landscape a {
-  text-decoration: none;
   color: white;
 }
 
@@ -101,10 +89,4 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  /* .landscape img {
-    display: block;
-  }
-
-  */
 }

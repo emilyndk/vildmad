@@ -1,85 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vildmad.dk</title>
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="flex">
-            <div class="logo">
-                <a href="index.html"> <img src="img/vildmad_logo.svg" alt="Logo" /></a>
-            </div>
+      <div class="flex">
+        <div class="logo">
+          <a href="index.html"> <img src="img/vildmad_logo.svg" alt="Logo" /></a>
+        </div>
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Frontpage</a></li>
-                    <li><a href="2categories.html">Choose</a></li>
-                    <li><a href="productlist.html">Productlist</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="categories.html">categories</a></li>
-                    <li><a href="spil.html">Play Game</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+        <div class="back">
+          <p>←</p>
+        </div>
+      </div>
 
-            </nav>
-
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Frontpage</a></li>
-                    <li><a href="productlist.html">Productlist</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="categories.html">categories</a></li>
-                    <li><a href="spil.html">Play Game</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Frontpage</a></li>
+          <li><a href="2categories.html">Choose</a></li>
+          <li><a href="productlist.html">Productlist</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="categories.html">categories</a></li>
+          <li><a href="spil.html">Play Game</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
-
     <main>
-        <img class="hero_img" src="#" alt="" />
+      <img class="hero_img" src="#" alt="" />
+      <div class="single_productcontainer">
         <h1></h1>
         <img class="product_img" src="#" alt="" />
         <dl class="infolist_products">
-            <dt>Category</dt>
-            <dd class="infolist_cat"></dd>
-            <dt>Season</dt>
-            <dd class="infolist_szn"></dd>
-            <dt>Location</dt>
-            <dd class="infolist_loc"></dd>
+          <dt>Category</dt>
+          <dd class="infolist_cat"></dd>
+          <dt>Season</dt>
+          <dd class="infolist_szn"></dd>
+          <dt>Location</dt>
+          <dd class="infolist_loc"></dd>
         </dl>
-        <p>længere tekst taget fra Vild Mad (opskrifter, descriptions??)</p>
+      </div>
+      <p>længere tekst taget fra Vild Mad (opskrifter, descriptions??)</p>
 
-        <form name="findings" id="findings" netlify>
-            <label for="product_found">Product foraged:</label>
-            <input type="checkbox" id="product_found" name="product_found" />
+      <form name="findings" id="findings" netlify>
+        <label for="product_found">Product foraged:</label>
+        <input type="checkbox" id="product_found" name="product_found" />
 
-            <label for="date">Date found:</label>
-            <input type="date" id="date" name="date" />
+        <label for="date">Date found:</label>
+        <input type="date" id="date" name="date" />
 
-            <label for="comment">Add comment:</label>
-            <textarea name="comment" id="comment"></textarea>
+        <label for="comment">Add comment:</label>
+        <textarea name="comment" id="comment"></textarea>
 
-            <input type="submit" id="submit" value="SUBMIT" />
-        </form>
+        <input type="submit" id="submit" value="SUBMIT" />
+      </form>
     </main>
 
     <footer></footer>
     <script src="js/burger.js"></script>
     <script src="js/products.js"></script>
-</body>
-
+  </body>
 </html>

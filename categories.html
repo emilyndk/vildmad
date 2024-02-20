@@ -6,21 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choose location</title>
   <link rel="stylesheet" href="css/categories.css" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header>
     <div class="flex">
       <div class="logo">
-        <a href="index.html">
-          <img src="img/vildmad_logo.svg" alt="Logo" /></a>
+        <a href="index.html"> <img src="img/vildmad_logo.svg" alt="Logo" /></a>
       </div>
 
       <div class="back">
-
-        <a href="2categories.html">←</a>
+        <p>←</p>
       </div>
     </div>
 
@@ -44,50 +43,42 @@
   <main>
     <h1>Where are you?</h1>
 
+    <template id="landscape_template">
+      <a href="#">
+        <article class="landscape">
+          <h2>Forest</h2>
+          <img src="img/forest.webp" alt="Forest" />
+        </article>
+      </a>
+    </template>
+
     <div class="landscapes_grid">
+      <!-- <article class="landscape forest">
+          <h2><a href="productlist.html">Forest</a></h2>
+          <img src="img/forest.webp" alt="Forest" />
+        </article>
 
+        <article class="landscape bythewater">
+          <h2><a href="productlist.html">By the water</a></h2>
+          <img src="img/bythewater.webp" alt="By the water" />
+        </article>
 
+        <article class="landscape outintheopen">
+          <h2><a href="productlist.html">Out in the open</a></h2>
+          <img src="img/bythewater.webp" alt="By the water" />
+        </article>
 
-      <article class="landscape forest">
-        <h2><a href="productlist.html">Forest</a></h2>
-        <img src="img/forest.webp" alt="Forest">
-      </article>
-
-      <article class="landscape bythewater">
-        <h2><a href="productlist.html">By the water</a></h2>
-        <img src="img/bythewater.webp" alt="By the water">
-      </article>
-
-      <article class="landscape outintheopen">
-        <h2><a href="productlist.html">Out in the open</a></h2>
-        <img src="img/bythewater.webp" alt="By the water">
-      </article>
-
-      <article class="landscape city">
-        <h2><a href="productlist.html">City</a></h2>
-        <img src="img/city.webp" alt="City">
-      </article>
+        <article class="landscape city">
+          <h2><a href="productlist.html">City</a></h2>
+          <img src="img/city.webp" alt="City" />
+        </article>
+        
+        -->
     </div>
   </main>
 
-
-  <footer>
-
-    <div class="grid">
-      <p class="contact">
-        <a href="#">Contact</a> <br> <a href="#">Social media</a><br> <a href="#">Work with us</a>
-      </p>
-
-      <div class="icons"> <img src="img/footer_img.svg" alt="icons">
-        <p class="school">A school project by Emily, Ronja, Clara & Fie for Copenhagen School of Design and Technology,
-          made
-          in the Spring of 2024.</p>
-      </div>
-
-    </div>
-
-
-  </footer>
+  <footer></footer>
+  <script src="js/categories.js"></script>
   <script src="js/burger.js"></script>
 </body>
 

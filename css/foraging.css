@@ -14,7 +14,7 @@
 body {
   background-color: #00825e;
 }
-p {
+.foragetext {
   margin: 2rem;
   line-height: 1.7;
 }
@@ -60,4 +60,10 @@ h1 {
   margin: 10px;
   margin-left: 0;
   font-size: 40px;
+}
+
+@media screen and (min-width: 700px) {
+  .foragetext {
+    margin: 4rem;
+  }
 }

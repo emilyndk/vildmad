@@ -12,6 +12,9 @@ body {
   font-family: inter;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 footer {

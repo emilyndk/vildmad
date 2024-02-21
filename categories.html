@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose location</title>
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Choose location</title>
-  <link rel="stylesheet" href="css/categories.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <header>
+      <div class="flex">
+        <div class="logo">
+          <a href="index.html"> <img src="img/vildmad_logo.svg" alt="Logo" /></a>
+        </div>
 
-<body>
-  <header>
-    <div class="flex">
-      <div class="logo">
-        <a href="index.html"> <img src="img/vildmad_logo.svg" alt="Logo" /></a>
+        <div class="back">
+          <a href="2categories.html">←</a>
+        </div>
       </div>
 
-      <div class="back">
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html">What is foraging</a></li>
+          <li><a href="categories.html">Where are you</a></li>
+          <li><a href="spil.html">Play Game</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
 
-        <a href="2categories.html">←</a>
-      </div>
-    </div>
+    <main>
+      <h1>Where are you?</h1>
+    </main>
 
+    <template id="landscape_template">
+      <a href="#">
+        <article class="landscape">
+          <h2>Forest</h2>
+          <img src="img/forest.webp" alt="Forest" />
+        </article>
+      </a>
+    </template>
 
-    </div>
-
-    <nav>
-      <ul class="menu">
-
-        <li><a href="foraging.html">What is foraging</a></li>
-        <li><a href="categories.html">Where are you</a></li>
-        <li><a href="foraging.html">What is foraging?</a></li>
-        <li><a href="spil.html">Play Game</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Where are you?</h1>
-  </main>
-
-  <template id="landscape_template">
-    <a href="#">
-      <article class="landscape">
-        <h2>Forest</h2>
-        <img src="img/forest.webp" alt="Forest" />
-      </article>
-    </a>
-  </template>
-
-  <div class="landscapes_grid">
-    <!-- <article class="landscape forest">
+    <div class="landscapes_grid">
+      <!-- <article class="landscape forest">
           <h2><a href="productlist.html">Forest</a></h2>
           <img src="img/forest.webp" alt="Forest" />
         </article>
@@ -78,29 +71,26 @@
         </article>
         
         -->
-  </div>
-
-
-  <footer>
-    <div class="grid">
-      <p class="contact">
-        <a href="#">Contact</a> <br />
-        <a href="#">Social media</a><br />
-        <a href="#">Work with us</a>
-      </p>
-
-      <div class="icons">
-        <img src="img/footer_img.svg" alt="icons" />
-        <p class="school">
-          A school project by Emily, Ronja, Clara & Fie for Copenhagen School of Design and Technology, made in the
-          Spring of
-          2024.
-        </p>
-      </div>
     </div>
-  </footer>
-  <script src="js/categories.js"></script>
-  <script src="js/burger.js"></script>
-</body>
 
+    <footer>
+      <div class="grid">
+        <p class="contact">
+          <a href="#">Contact</a> <br />
+          <a href="#">Social media</a><br />
+          <a href="#">Work with us</a>
+        </p>
+
+        <div class="icons">
+          <img src="img/footer_img.svg" alt="icons" />
+          <p class="school">
+            A school project by Emily, Ronja, Clara & Fie for Copenhagen School of Design and Technology, made in the Spring of
+            2024.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/categories.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
 </html>

@@ -75,18 +75,22 @@
 <!-- template til productlist -->
 <template id="productlist_template">
   <article>
-    <img src="#" alt="" />
-    <h3></h3>
-    <p class="pl_category"></p>
-    <p class="pl_season"></p>
-    <a href="products.html" class="button2">Read more</a>
-    <form name="findings" id="findings" netlify>
-      <label for="product_found">Product foraged:</label>
-      <input type="checkbox" id="product_found" name="product" />
-      <!-- <label for="comment">Add comment:</label>
-      <textarea name="comment" id="comment"></textarea> -->
+    <div class="indhold_article">
+      <img src="#" alt="" />
+      <h3></h3>
+      <p class="pl_category"></p>
+      <p class="pl_season"></p>
+      <a href="products.html" class="button2">Read more</a>
+      <form name="findings" id="findings" netlify>
+        <div class="checkbox_prodlist">
+          <label for="product_found">Product foraged:</label>
 
-      <input type="submit" id="submit" value="SUBMIT" />
-    </form>
+          <input type="checkbox" id="product_found" name="product" />
+          <!-- <label for="comment">Add comment:</label>
+      <textarea name="comment" id="comment"></textarea> -->
+        </div>
+        <input type="submit" id="submit" value="SUBMIT" />
+      </form>
+    </div>
   </article>
 </template>

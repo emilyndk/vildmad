@@ -8,3 +8,9 @@
 img {
   max-width: 100%;
 }
+
+#findings {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}

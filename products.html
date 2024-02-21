@@ -37,8 +37,8 @@
     </header>
     <main>
       <img class="hero_img" src="#" alt="" />
+      <h1></h1>
       <div class="single_productcontainer">
-        <h1></h1>
         <img class="product_img" src="#" alt="" />
         <dl class="infolist_products">
           <dt>Category</dt>
@@ -49,17 +49,22 @@
           <dd class="infolist_loc"></dd>
         </dl>
       </div>
-      <p>længere tekst taget fra Vild Mad (opskrifter, descriptions??)</p>
 
       <form name="findings" id="findings" netlify>
-        <label for="product_found">Product foraged:</label>
-        <input type="checkbox" id="product_found" name="product_found" />
+        <div class="checkbox">
+          <label for="product_found">Product foraged:</label>
+          <input type="checkbox" id="product_found" name="product_found" />
+        </div>
 
-        <label for="date">Date found:</label>
-        <input type="date" id="date" name="date" />
+        <div class="date">
+          <label for="date">Date found:</label>
+          <input type="date" id="date" name="date" />
+        </div>
 
-        <label for="comment">Add comment:</label>
-        <textarea name="comment" id="comment"></textarea>
+        <div class="comment">
+          <label for="comment">Add comment:</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
 
         <input type="submit" id="submit" value="SUBMIT" />
       </form>

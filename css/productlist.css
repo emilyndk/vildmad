@@ -6,10 +6,20 @@
 
 article {
   width: 100%;
+  background-color: #009c7023;
+  border-radius: 30px;
 }
 
 article img {
-  max-width: 100%;
+  max-width: 90%;
+  align-self: center;
+  border-radius: 400px;
+}
+
+.indhold_article {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -23,4 +33,13 @@ a {
   justify-content: space-around;
   width: 80%;
   margin-top: 10%;
+}
+
+.checkbox_prodlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit {
+  margin: 2rem 0;
 }

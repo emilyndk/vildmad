@@ -15,9 +15,9 @@ body {
   background-color: #00825e;
 }
 .foragetext {
-  margin: 2rem;
   line-height: 1.7;
 }
+
 nav {
   height: 2rem;
 }
@@ -66,6 +66,7 @@ h1 {
   background-color: #009c71;
   color: white;
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 .flex {

@@ -105,10 +105,10 @@ header ul {
 }
 
 @media screen and (min-width: 768px) {
-  @font-face {
+  /*   @font-face {
     font-family: inter;
     src: url(../font/Inter-Light.woff2);
-  }
+  } */
   header nav ul {
     padding: 1rem 2rem;
     padding-left: 1rem;
@@ -128,8 +128,9 @@ header ul {
   header a {
     color: rgb(8, 7, 7);
     text-decoration: none;
-    text-shadow: 1px 0px 0px;
-    font-family: inter;
+    /*    text-shadow: 1px 0px 0px; */
+    /*   font-family: inter; */
+    font-weight: lighter;
   }
 
   header {

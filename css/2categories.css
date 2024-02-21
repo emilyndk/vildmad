@@ -70,6 +70,10 @@ h2 {
   background-color: #032871;
 }
 
+.location {
+  background-color: #ffc8c9;
+}
+
 section {
   margin-top: 3rem;
 }
@@ -78,4 +82,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media screen and (min-width: 700px) {
+  main {
+    margin: 0 !important;
+  }
 }

@@ -19,15 +19,12 @@ function showCategories(categories) {
 }
 
 function showCategory(cat) {
-  console.log(cat);
-
   //fang template
   const template = document.querySelector("#landscape_template").content;
   // lav en kopi
   const copy = template.cloneNode(true);
   // ændre indhold
   copy.querySelector("h2").textContent = cat.location;
-  //copy.querySelector("img").src = product.product_image;
   copy.querySelector("a").href = `productlist.html?location_id=${cat.id}`;
 
   if (cat.id == 1) {

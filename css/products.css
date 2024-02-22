@@ -22,3 +22,9 @@ article {
   background-color: #009c7023;
   border-radius: 30px;
 }
+
+.indhold_article {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}

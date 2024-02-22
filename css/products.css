@@ -13,8 +13,27 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 80%;
+  width: 180px;
   margin-top: 10%;
+}
+
+.checkbox {
+  padding: 10px;
+}
+.date {
+  padding: 10px;
+}
+.date {
+  padding: 10px;
+}
+
+.comment {
+  padding: 10px;
+}
+
+#submit {
+  margin: 10px;
+  padding: 5px;
 }
 
 article {
@@ -24,7 +43,13 @@ article {
 }
 
 .indhold_article {
-  margin: 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.product_img {
+  max-width: 90%;
+  align-self: center;
+  border-radius: 400px;
 }
